@@ -149,10 +149,10 @@ Partial Class mahasiswa1
         'NimMahasiswaTextBox
         '
         Me.NimMahasiswaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MahasiswaBindingSource, "NimMahasiswa", True))
-        Me.NimMahasiswaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NimMahasiswaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NimMahasiswaTextBox.Location = New System.Drawing.Point(140, 33)
         Me.NimMahasiswaTextBox.Name = "NimMahasiswaTextBox"
-        Me.NimMahasiswaTextBox.Size = New System.Drawing.Size(135, 26)
+        Me.NimMahasiswaTextBox.Size = New System.Drawing.Size(135, 21)
         Me.NimMahasiswaTextBox.TabIndex = 1
         '
         'NamaMahasiswaLabel
@@ -168,10 +168,10 @@ Partial Class mahasiswa1
         'NamaMahasiswaTextBox
         '
         Me.NamaMahasiswaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MahasiswaBindingSource, "NamaMahasiswa", True))
-        Me.NamaMahasiswaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NamaMahasiswaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NamaMahasiswaTextBox.Location = New System.Drawing.Point(140, 60)
         Me.NamaMahasiswaTextBox.Name = "NamaMahasiswaTextBox"
-        Me.NamaMahasiswaTextBox.Size = New System.Drawing.Size(135, 26)
+        Me.NamaMahasiswaTextBox.Size = New System.Drawing.Size(135, 21)
         Me.NamaMahasiswaTextBox.TabIndex = 3
         '
         'AlamatMahasiswaLabel
@@ -187,10 +187,10 @@ Partial Class mahasiswa1
         'AlamatMahasiswaTextBox
         '
         Me.AlamatMahasiswaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MahasiswaBindingSource, "AlamatMahasiswa", True))
-        Me.AlamatMahasiswaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AlamatMahasiswaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AlamatMahasiswaTextBox.Location = New System.Drawing.Point(140, 87)
         Me.AlamatMahasiswaTextBox.Name = "AlamatMahasiswaTextBox"
-        Me.AlamatMahasiswaTextBox.Size = New System.Drawing.Size(135, 26)
+        Me.AlamatMahasiswaTextBox.Size = New System.Drawing.Size(135, 21)
         Me.AlamatMahasiswaTextBox.TabIndex = 5
         '
         'Button1

@@ -40,6 +40,34 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        NimMahasiswaTextBox.Enabled = True
+        NamaMahasiswaTextBox.Enabled = True
+        AlamatMahasiswaTextBox = True
         MahasiswaBindingSource.AddNew()
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Me.Validate()
+        Me.MahasiswaBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Dbkelompok8DataSet)
+
+        MessageBox.Show("data telah tersimpan")
+
+        NimMahasiswaTextBox.Enabled = False
+        NamaMahasiswaTextBox.Enabled = False
+        AlamatMahasiswaTextBox = False
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        If MessageBox.Show("hapus data?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult Then
+            MahasiswaBindingSource.RemoveCurrent()
+
+            Me.Validate()
+            Me.MahasiswaBindingSource.EndEdit()
+            Me.TableAdapterManager.UpdateAll(Me.Dbkelompok8DataSet)
+
+            MessageBox.Show("data telah terhapus")
+        End If
     End Sub
 End Class
