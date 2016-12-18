@@ -32,8 +32,14 @@
     End Sub
 
     Private Sub mahasiswa1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Dbkelompok8DataSet.dosen' table. You can move, or remove it, as needed.
+        Me.DosenTableAdapter.Fill(Me.Dbkelompok8DataSet.dosen)
         'TODO: This line of code loads data into the 'Dbkelompok8DataSet.mahasiswa' table. You can move, or remove it, as needed.
         Me.MahasiswaTableAdapter.Fill(Me.Dbkelompok8DataSet.mahasiswa)
 
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        MahasiswaBindingSource.AddNew()
     End Sub
 End Class
