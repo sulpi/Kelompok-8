@@ -49,10 +49,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -72,6 +77,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbkelompok8DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbkelompok8DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,16 +104,65 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TabelDosen.Designer.vb">
+      <DependentUpon>TabelDosen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelDosen.vb" />
+    <Compile Include="TabelMahasiswa.Designer.vb">
+      <DependentUpon>TabelMahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelMahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelMataKuliah.Designer.vb">
+      <DependentUpon>TabelMataKuliah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelMataKuliah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelRuang.Designer.vb">
+      <DependentUpon>TabelRuang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelRuang.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TabelDosen.resx">
+      <DependentUpon>TabelDosen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelMahasiswa.resx">
+      <DependentUpon>TabelMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelMataKuliah.resx">
+      <DependentUpon>TabelMataKuliah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelRuang.resx">
+      <DependentUpon>TabelRuang.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="dbkelompok8DataSet.xsc">
+      <DependentUpon>dbkelompok8DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbkelompok8DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbkelompok8DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbkelompok8DataSet.xss">
+      <DependentUpon>dbkelompok8DataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
