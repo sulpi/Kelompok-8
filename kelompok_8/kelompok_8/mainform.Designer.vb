@@ -51,25 +51,25 @@ Partial Class mainform
         'MahasiswaToolStripMenuItem
         '
         Me.MahasiswaToolStripMenuItem.Name = "MahasiswaToolStripMenuItem"
-        Me.MahasiswaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MahasiswaToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.MahasiswaToolStripMenuItem.Text = "Mahasiswa"
         '
         'DosenToolStripMenuItem
         '
         Me.DosenToolStripMenuItem.Name = "DosenToolStripMenuItem"
-        Me.DosenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DosenToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.DosenToolStripMenuItem.Text = "Dosen"
         '
         'MataKuliahToolStripMenuItem
         '
         Me.MataKuliahToolStripMenuItem.Name = "MataKuliahToolStripMenuItem"
-        Me.MataKuliahToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MataKuliahToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.MataKuliahToolStripMenuItem.Text = "Mata Kuliah"
         '
         'DosenToolStripMenuItem1
         '
         Me.DosenToolStripMenuItem1.Name = "DosenToolStripMenuItem1"
-        Me.DosenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.DosenToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
         Me.DosenToolStripMenuItem1.Text = "Ruang"
         '
         'TentangToolStripMenuItem

@@ -151,6 +151,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TabelRuang.resx">
       <DependentUpon>TabelRuang.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

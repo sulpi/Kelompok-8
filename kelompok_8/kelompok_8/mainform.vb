@@ -15,4 +15,8 @@
     Private Sub DosenToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DosenToolStripMenuItem1.Click
         Tabelruang.ShowDialog()
     End Sub
+
+    Private Sub mainform_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
