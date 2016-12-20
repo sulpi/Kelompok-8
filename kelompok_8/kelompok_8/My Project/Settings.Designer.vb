@@ -63,16 +63,6 @@ Namespace My
                 Return CType(Me("dbkelompok8ConnectionString"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=dbkelompok8")>  _
-        Public ReadOnly Property dbkelompok8ConnectionString1() As String
-            Get
-                Return CType(Me("dbkelompok8ConnectionString1"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 

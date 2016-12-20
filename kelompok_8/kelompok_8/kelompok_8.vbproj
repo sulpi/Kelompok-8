@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{023EC089-465B-4D99-8AAD-110901B49EE7}</ProjectGuid>
+    <ProjectGuid>{4DBB397A-6ACB-468A-A742-797C026278B4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>kelompok_8.My.MyApplication</StartupObject>
     <RootNamespace>kelompok_8</RootNamespace>
-    <AssemblyName>kelompok 8</AssemblyName>
+    <AssemblyName>kelompok_8</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>kelompok 8.xml</DocumentationFile>
+    <DocumentationFile>kelompok_8.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>kelompok 8.xml</DocumentationFile>
+    <DocumentationFile>kelompok_8.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -82,22 +82,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbkelompok8DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dbkelompok8DataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbkelompok8DataSet1.xsd</DependentUpon>
+    <Compile Include="mainform.Designer.vb">
+      <DependentUpon>mainform.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="mainform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -105,6 +93,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Include="My Project\Form1.vb" />
+    <Compile Include="My Project\Form11.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,19 +105,52 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TabelDosen.Designer.vb">
+      <DependentUpon>TabelDosen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelDosen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelMahasiswa.Designer.vb">
+      <DependentUpon>TabelMahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelMahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelMataKuliah.Designer.vb">
+      <DependentUpon>TabelMataKuliah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelMataKuliah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelRuang.Designer.vb">
+      <DependentUpon>TabelRuang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelRuang.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelDosen.resx">
+      <DependentUpon>TabelDosen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelMahasiswa.resx">
+      <DependentUpon>TabelMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelMataKuliah.resx">
+      <DependentUpon>TabelMataKuliah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelRuang.resx">
+      <DependentUpon>TabelRuang.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -142,17 +165,6 @@
     </None>
     <None Include="dbkelompok8DataSet.xss">
       <DependentUpon>dbkelompok8DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dbkelompok8DataSet1.xsc">
-      <DependentUpon>dbkelompok8DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="dbkelompok8DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbkelompok8DataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbkelompok8DataSet1.xss">
-      <DependentUpon>dbkelompok8DataSet1.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
