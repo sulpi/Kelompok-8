@@ -117,6 +117,18 @@
     <Compile Include="TabelMahasiswa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TabelMataKuliah.Designer.vb">
+      <DependentUpon>TabelMataKuliah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelMataKuliah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelRuang.Designer.vb">
+      <DependentUpon>TabelRuang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabelRuang.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="mainform.resx">
@@ -133,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TabelMahasiswa.resx">
       <DependentUpon>TabelMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelMataKuliah.resx">
+      <DependentUpon>TabelMataKuliah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelRuang.resx">
+      <DependentUpon>TabelRuang.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

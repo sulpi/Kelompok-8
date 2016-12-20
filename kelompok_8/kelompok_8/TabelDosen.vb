@@ -23,7 +23,6 @@
         Mahasiswa_NIMTextBox.Enabled = True
         Mata_kuliah_KodeMataKuliahTextBox1.Enabled = True
 
-        DosenBindingSource.CancelEdit()
     End Sub
 
     Private Sub HapusButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HapusButton.Click
