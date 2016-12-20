@@ -1,39 +1,46 @@
 ﻿Public Class Form1
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        End
+    Private Sub Text1_KeyPress(ByVal KeyAscii As Integer)
+        If KeyAscii = vbKeyReturn Then
+            Button2.SetBounds()
+        End If
+    End Sub
+
+
+    Private Sub Text2_KeyPress(ByVal KeyAscii As Integer)
+        If KeyAscii = vbKeyReturn Then
+            Button1.SetBounds()
+        End If
+    End Sub
+
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Timer1.Start()
-    End Sub
-
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        If TextBox1.Text = "nama" And TextBox2.Text = "password" Then
-            ProgressBar1.Increment(10)
-            If ProgressBar1.Value = ProgressBar1.Maximum Then
-                Timer1.Stop()
-                ProgressBar1.Value = 0
-                MsgBox("Kamu Masuk", MsgBoxStyle.Information)
-                Form2.Show()
-            End If
+        If Me.Text1.Text = "LABKOM" And Me.Text2.Text = "siswa" Then
+        MsgBox ("Selamat datang di Lab Komputer"), , "Benar "
         Else
-            Timer1.Start()
-            ProgressBar1.Increment(10)
-            If ProgressBar1.Value = ProgressBar1.Maximum Then
-                Timer1.Stop()
-                ProgressBar1.Value = 0
-                MsgBox("gagal masuk", MsgBoxStyle.Critical)
-            End If
+        MsgBox ("Password Anda Salah, Silahkan Coba Lagi !"), , "Salah"
+            Exit Sub
         End If
     End Sub
-
-    Private Sub CheckBox1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked Then
-            TextBox2.UseSystemPasswordChar = False
-        Else
-            TextBox2.UseSystemPasswordChar = True
-        End If
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Text1.Text = ""
+        Me.Text2.Text = ""
     End Sub
+
+    Private Function Text1() As Object
+        Throw New NotImplementedException
+    End Function
+
+    Private Function Text2() As Object
+        Throw New NotImplementedException
+    End Function
+
+    Private Function vbKeyReturn() As Integer
+        Throw New NotImplementedException
+    End Function
 
 End Class
