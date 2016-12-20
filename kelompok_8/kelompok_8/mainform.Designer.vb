@@ -37,7 +37,7 @@ Partial Class mainform
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuUtamaToolStripMenuItem, Me.TentangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(461, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(366, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -70,7 +70,7 @@ Partial Class mainform
         '
         Me.DosenToolStripMenuItem1.Name = "DosenToolStripMenuItem1"
         Me.DosenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.DosenToolStripMenuItem1.Text = "Dosen"
+        Me.DosenToolStripMenuItem1.Text = "Ruang"
         '
         'TentangToolStripMenuItem
         '
@@ -82,7 +82,7 @@ Partial Class mainform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(461, 275)
+        Me.ClientSize = New System.Drawing.Size(366, 164)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "mainform"

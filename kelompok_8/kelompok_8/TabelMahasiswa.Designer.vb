@@ -107,7 +107,7 @@ Partial Class TabelMahasiswa
         Me.MahasiswaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MahasiswaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.MahasiswaDataGridView.DataSource = Me.MahasiswaBindingSource
-        Me.MahasiswaDataGridView.Location = New System.Drawing.Point(224, 67)
+        Me.MahasiswaDataGridView.Location = New System.Drawing.Point(298, 67)
         Me.MahasiswaDataGridView.Name = "MahasiswaDataGridView"
         Me.MahasiswaDataGridView.Size = New System.Drawing.Size(340, 166)
         Me.MahasiswaDataGridView.TabIndex = 1
@@ -133,30 +133,30 @@ Partial Class TabelMahasiswa
         'NimMahasiswaTextBox
         '
         Me.NimMahasiswaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MahasiswaBindingSource, "NimMahasiswa", True))
-        Me.NimMahasiswaTextBox.Location = New System.Drawing.Point(116, 67)
+        Me.NimMahasiswaTextBox.Location = New System.Drawing.Point(127, 67)
         Me.NimMahasiswaTextBox.Name = "NimMahasiswaTextBox"
-        Me.NimMahasiswaTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NimMahasiswaTextBox.Size = New System.Drawing.Size(147, 20)
         Me.NimMahasiswaTextBox.TabIndex = 2
         '
         'NamaMahasiswaTextBox
         '
         Me.NamaMahasiswaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MahasiswaBindingSource, "NamaMahasiswa", True))
-        Me.NamaMahasiswaTextBox.Location = New System.Drawing.Point(116, 93)
+        Me.NamaMahasiswaTextBox.Location = New System.Drawing.Point(127, 93)
         Me.NamaMahasiswaTextBox.Name = "NamaMahasiswaTextBox"
-        Me.NamaMahasiswaTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NamaMahasiswaTextBox.Size = New System.Drawing.Size(147, 20)
         Me.NamaMahasiswaTextBox.TabIndex = 4
         '
         'AlamatMahasiswaTextBox
         '
         Me.AlamatMahasiswaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MahasiswaBindingSource, "AlamatMahasiswa", True))
-        Me.AlamatMahasiswaTextBox.Location = New System.Drawing.Point(116, 119)
+        Me.AlamatMahasiswaTextBox.Location = New System.Drawing.Point(127, 119)
         Me.AlamatMahasiswaTextBox.Name = "AlamatMahasiswaTextBox"
-        Me.AlamatMahasiswaTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.AlamatMahasiswaTextBox.Size = New System.Drawing.Size(147, 20)
         Me.AlamatMahasiswaTextBox.TabIndex = 6
         '
         'TambahButton
         '
-        Me.TambahButton.Location = New System.Drawing.Point(16, 167)
+        Me.TambahButton.Location = New System.Drawing.Point(47, 167)
         Me.TambahButton.Name = "TambahButton"
         Me.TambahButton.Size = New System.Drawing.Size(63, 30)
         Me.TambahButton.TabIndex = 7
@@ -165,7 +165,7 @@ Partial Class TabelMahasiswa
         '
         'EditButton
         '
-        Me.EditButton.Location = New System.Drawing.Point(85, 167)
+        Me.EditButton.Location = New System.Drawing.Point(116, 167)
         Me.EditButton.Name = "EditButton"
         Me.EditButton.Size = New System.Drawing.Size(63, 30)
         Me.EditButton.TabIndex = 8
@@ -174,7 +174,7 @@ Partial Class TabelMahasiswa
         '
         'HapusButton
         '
-        Me.HapusButton.Location = New System.Drawing.Point(154, 167)
+        Me.HapusButton.Location = New System.Drawing.Point(185, 167)
         Me.HapusButton.Name = "HapusButton"
         Me.HapusButton.Size = New System.Drawing.Size(63, 30)
         Me.HapusButton.TabIndex = 9
@@ -183,7 +183,7 @@ Partial Class TabelMahasiswa
         '
         'SimpanButton
         '
-        Me.SimpanButton.Location = New System.Drawing.Point(16, 203)
+        Me.SimpanButton.Location = New System.Drawing.Point(47, 203)
         Me.SimpanButton.Name = "SimpanButton"
         Me.SimpanButton.Size = New System.Drawing.Size(200, 30)
         Me.SimpanButton.TabIndex = 10
@@ -194,7 +194,7 @@ Partial Class TabelMahasiswa
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Script MT Bold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(143, 10)
+        Me.Label1.Location = New System.Drawing.Point(149, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 38)
         Me.Label1.TabIndex = 11
@@ -204,7 +204,7 @@ Partial Class TabelMahasiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(583, 271)
+        Me.ClientSize = New System.Drawing.Size(659, 253)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SimpanButton)
         Me.Controls.Add(Me.HapusButton)
