@@ -85,6 +85,24 @@ Partial Class TabelDosen
         AlamatDosenLabel.TabIndex = 17
         AlamatDosenLabel.Text = "Alamat Dosen:"
         '
+        'Mata_kuliah_KodeMataKuliahLabel1
+        '
+        Mata_kuliah_KodeMataKuliahLabel1.AutoSize = True
+        Mata_kuliah_KodeMataKuliahLabel1.Location = New System.Drawing.Point(12, 163)
+        Mata_kuliah_KodeMataKuliahLabel1.Name = "Mata_kuliah_KodeMataKuliahLabel1"
+        Mata_kuliah_KodeMataKuliahLabel1.Size = New System.Drawing.Size(151, 13)
+        Mata_kuliah_KodeMataKuliahLabel1.TabIndex = 39
+        Mata_kuliah_KodeMataKuliahLabel1.Text = "mata kuliah-Kode Mata Kuliah:"
+        '
+        'Mahasiswa_NIMLabel
+        '
+        Mahasiswa_NIMLabel.AutoSize = True
+        Mahasiswa_NIMLabel.Location = New System.Drawing.Point(12, 137)
+        Mahasiswa_NIMLabel.Name = "Mahasiswa_NIMLabel"
+        Mahasiswa_NIMLabel.Size = New System.Drawing.Size(86, 13)
+        Mahasiswa_NIMLabel.TabIndex = 46
+        Mahasiswa_NIMLabel.Text = "Mahasiswa-NIM:"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -125,7 +143,7 @@ Partial Class TabelDosen
         Me.DosenDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DosenDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.DosenDataGridView.DataSource = Me.DosenBindingSource
-        Me.DosenDataGridView.Location = New System.Drawing.Point(331, 56)
+        Me.DosenDataGridView.Location = New System.Drawing.Point(341, 56)
         Me.DosenDataGridView.Name = "DosenDataGridView"
         Me.DosenDataGridView.Size = New System.Drawing.Size(344, 215)
         Me.DosenDataGridView.TabIndex = 13
@@ -228,15 +246,6 @@ Partial Class TabelDosen
         Me.Mata_kuliah_KodeMataKuliahTextBox1.Size = New System.Drawing.Size(156, 20)
         Me.Mata_kuliah_KodeMataKuliahTextBox1.TabIndex = 40
         '
-        'Mata_kuliah_KodeMataKuliahLabel1
-        '
-        Mata_kuliah_KodeMataKuliahLabel1.AutoSize = True
-        Mata_kuliah_KodeMataKuliahLabel1.Location = New System.Drawing.Point(12, 163)
-        Mata_kuliah_KodeMataKuliahLabel1.Name = "Mata_kuliah_KodeMataKuliahLabel1"
-        Mata_kuliah_KodeMataKuliahLabel1.Size = New System.Drawing.Size(151, 13)
-        Mata_kuliah_KodeMataKuliahLabel1.TabIndex = 39
-        Mata_kuliah_KodeMataKuliahLabel1.Text = "mata kuliah-Kode Mata Kuliah:"
-        '
         'Mahasiswa_NIMTextBox
         '
         Me.Mahasiswa_NIMTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DosenBindingSource, "Mahasiswa_NIM", True))
@@ -244,15 +253,6 @@ Partial Class TabelDosen
         Me.Mahasiswa_NIMTextBox.Name = "Mahasiswa_NIMTextBox"
         Me.Mahasiswa_NIMTextBox.Size = New System.Drawing.Size(156, 20)
         Me.Mahasiswa_NIMTextBox.TabIndex = 47
-        '
-        'Mahasiswa_NIMLabel
-        '
-        Mahasiswa_NIMLabel.AutoSize = True
-        Mahasiswa_NIMLabel.Location = New System.Drawing.Point(12, 137)
-        Mahasiswa_NIMLabel.Name = "Mahasiswa_NIMLabel"
-        Mahasiswa_NIMLabel.Size = New System.Drawing.Size(86, 13)
-        Mahasiswa_NIMLabel.TabIndex = 46
-        Mahasiswa_NIMLabel.Text = "Mahasiswa-NIM:"
         '
         'TabelDosen
         '

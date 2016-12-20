@@ -16,7 +16,9 @@
     End Sub
 
     Private Sub EditButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditButton.Click
-        MahasiswaBindingSource.CancelEdit()
+        NamaMahasiswaTextBox.Enabled = True
+        AlamatMahasiswaTextBox.Enabled = True
+
     End Sub
 
     Private Sub HapusButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HapusButton.Click
@@ -34,5 +36,6 @@
         NimMahasiswaTextBox.Enabled = False
         NamaMahasiswaTextBox.Enabled = False
         AlamatMahasiswaTextBox.Enabled = False
+
     End Sub
 End Class
