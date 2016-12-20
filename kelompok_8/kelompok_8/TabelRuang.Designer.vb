@@ -166,7 +166,7 @@ Partial Class TabelRuang
         '
         'SimpanButton
         '
-        Me.SimpanButton.Location = New System.Drawing.Point(15, 209)
+        Me.SimpanButton.Location = New System.Drawing.Point(15, 186)
         Me.SimpanButton.Name = "SimpanButton"
         Me.SimpanButton.Size = New System.Drawing.Size(200, 30)
         Me.SimpanButton.TabIndex = 21
@@ -175,7 +175,7 @@ Partial Class TabelRuang
         '
         'HapusButton
         '
-        Me.HapusButton.Location = New System.Drawing.Point(153, 173)
+        Me.HapusButton.Location = New System.Drawing.Point(153, 150)
         Me.HapusButton.Name = "HapusButton"
         Me.HapusButton.Size = New System.Drawing.Size(63, 30)
         Me.HapusButton.TabIndex = 20
@@ -184,7 +184,7 @@ Partial Class TabelRuang
         '
         'EditButton
         '
-        Me.EditButton.Location = New System.Drawing.Point(84, 173)
+        Me.EditButton.Location = New System.Drawing.Point(84, 150)
         Me.EditButton.Name = "EditButton"
         Me.EditButton.Size = New System.Drawing.Size(63, 30)
         Me.EditButton.TabIndex = 19
@@ -193,7 +193,7 @@ Partial Class TabelRuang
         '
         'TambahButton
         '
-        Me.TambahButton.Location = New System.Drawing.Point(15, 173)
+        Me.TambahButton.Location = New System.Drawing.Point(15, 150)
         Me.TambahButton.Name = "TambahButton"
         Me.TambahButton.Size = New System.Drawing.Size(63, 30)
         Me.TambahButton.TabIndex = 18
