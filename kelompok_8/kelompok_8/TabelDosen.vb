@@ -42,4 +42,8 @@
         Mahasiswa_NIMTextBox.Enabled = False
         Mata_kuliah_KodeMataKuliahTextBox1.Enabled = False
     End Sub
+
+    Private Sub NipDosenTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NipDosenTextBox.TextChanged
+
+    End Sub
 End Class
